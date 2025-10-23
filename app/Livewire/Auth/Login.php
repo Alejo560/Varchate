@@ -17,13 +17,18 @@ class Login extends Component
     {
         $this->validate([
             'email' => 'required|email',
-            'password' => 'required',
+            'password' => 'required|min:6',
         ]);
 
         $usuario = Usuario::where('email', $this->email)->first();
 
         if (!$usuario || !Hash::check($this->password, $usuario->contrasena)) {
             session()->flash('error', 'Correo o contraseña incorrectos.');
+            return;
+        }
+
+        if ($usuario->estado == 0) {
+            session()->flash('error', 'Tu cuenta está inactiva.');
             return;
         }
 

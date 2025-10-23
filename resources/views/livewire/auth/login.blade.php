@@ -198,7 +198,8 @@
         <form wire:submit.prevent="login">
           <input type="email" wire:model="email" placeholder="Correo" required>
           <input type="password" wire:model="password" placeholder="Contraseña" required>
-          <a href="#">¿Olvidaste tu contraseña?</a>
+          <a href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a>
+
           <button type="submit">Entrar</button>
         </form>
 

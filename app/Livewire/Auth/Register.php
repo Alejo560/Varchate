@@ -5,6 +5,7 @@ namespace App\Livewire\Auth;
 use Livewire\Component;
 use App\Models\Usuario;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class Register extends Component
 {
@@ -23,15 +24,23 @@ class Register extends Component
             'acepto_terminos' => 'accepted',
         ]);
 
+        // Crear usuario con token de verificación
         $usuario = Usuario::create([
             'nombre' => $this->nombre,
             'email' => $this->email,
             'contrasena' => Hash::make($this->password),
             'acepto_terminos' => 1,
+            'confirmado' => 0,
+            'token_verificacion' => Str::random(60),
         ]);
 
+        // ✅ Enviar correo de verificación
+        $usuario->notify(new \App\Notifications\VerifyEmailNotification($usuario));
+
+        // Iniciar sesión, pero redirigir a aviso de verificación
         auth()->login($usuario);
-        return redirect()->route('dashboard');
+
+        return redirect()->route('verificacion.aviso');
     }
 
     public function render()
