@@ -1,9 +1,4 @@
-<div><!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verificación de correo - Varchate</title>
+<div>
   <style>
     body {
       min-height: 100vh;
@@ -16,6 +11,7 @@
       color: #333;
     }
     .card {
+      
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -41,8 +37,7 @@
       font-weight: bold;
     }
   </style>
-</head>
-<body>
+
   <div class="card">
     <h2>Verifica tu correo electrónico</h2>
     <p>Te enviamos un enlace a <strong>{{ auth()->user()->email }}</strong>.</p>
@@ -53,6 +48,5 @@
       <button type="submit" class="btn">Cerrar sesión</button>
     </form>
   </div>
-</body>
-</html>
+
 </div>

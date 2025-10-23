@@ -1,10 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contraseña actualizada - Varchate</title>
+<div>
   <style>
     * {
       box-sizing: border-box;
@@ -159,11 +153,7 @@
         gap: 30px;
       }
     }
-  </style>
-</head>
-
-<body>
-
+ </style>
   <div class="main">
     <div class="left">
       <img src="{{ asset('./imagenes/logo.png') }}" alt="Logo Varchate" class="logo">
@@ -192,6 +182,5 @@
   }, 3000);
 </script>
 
-</body>
-</html>
+</div>
 

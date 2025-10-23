@@ -1,10 +1,5 @@
 <div>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enlace de Confirmación</title>
+
   <style>
     body {
       min-height: 100vh;
@@ -77,8 +72,7 @@
       .box { width: 90%; padding: 25px; }
     }
   </style>
-</head>
-<body>
+
   <div class="container">
     <header>
       <img src="{{ asset('imagenes/logo2.png') }}" alt="varchate" class="logo">
@@ -98,6 +92,5 @@
   <div class="wave-section">
     <img src="{{ asset('imagenes/ola2.png') }}" alt="Ola inferior" class="ola2">
   </div>
-</body>
-</html>
+
 </div>

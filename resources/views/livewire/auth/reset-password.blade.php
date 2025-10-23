@@ -1,11 +1,6 @@
 <div>
-<div>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restablecer Contraseña - Varchate</title>
+
+
   <style>
 
     body {
@@ -186,8 +181,7 @@
       .olas {margin: 0px 0px 120px 0px;}
     }
   </style>
-</head>
-<body>
+
   <div class="container">
     <div class="left">
       <img src="{{ asset('./imagenes/asustado.png') }}" alt="Mascota Varchate">
@@ -211,8 +205,5 @@
       </div>
     </div>
   </div>
-</body>
-</html>
-</div>
 
 </div>

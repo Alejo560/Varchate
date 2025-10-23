@@ -1,10 +1,4 @@
 <div>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Varchate</title>
   <style>
     body {
       margin: 0;
@@ -177,9 +171,7 @@
       .olas { margin: 0px 0px 120px 0px; }
     }
   </style>
-</head>
 
-<body>
   <header>
     <img src="{{ asset('./imagenes/olas.svg') }}" alt="Ola superior" class="olas">
   </header>
@@ -219,6 +211,4 @@
       </div>
     </div>
   </div>
-</body>
-</html>
 </div>

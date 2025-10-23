@@ -66,7 +66,7 @@ class ResetPassword extends Component
         // 🔑 Iniciar sesión automáticamente
         Auth::login($usuario);
 
-        // ✅ Redirigir a la vista de confirmación
+        //  Redirigir a la vista de confirmación
         return redirect()->route('password.updated');
 
     }
